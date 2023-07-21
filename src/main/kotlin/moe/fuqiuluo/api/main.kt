@@ -25,7 +25,7 @@ data class APIInfo(
 
 fun Routing.index() {
     get("/") {
-        call.respond(APIResult(0, "IAA 云天明 章北海", APIInfo(
+        call.respond(APIResult(0, "The LTS qsign server by PUEH Studio.", APIInfo(
             version = BuildConfig.version,
             protocol = CONFIG.protocol
         )))
